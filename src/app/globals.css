@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Tusker Grotesk";
+  src: url("/fonts/TuskerGrotesk-5700Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("/fonts/Pretendard-Bold.woff") format("woff");
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TerminaTest";
+  src: url("/fonts/TerminaTest-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: "Tusker Grotesk", sans-serif;
+}
+
+.font-tusker {
+  font-family: "Tusker Grotesk";
+}
+
+.font-pretendard {
+  font-family: "Pretendard";
+}
+.font-termina-test {
+  font-family: "TerminaTest";
+}
+
+.font-inter {
+  font-family: "Inter";
+}
+
+/* styles/globals.css */
+
+/* 숫자 증가/감소 스피너 제거 */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox에서 스피너 제거 */
+}
